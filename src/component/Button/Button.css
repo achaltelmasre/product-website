@@ -1,0 +1,15 @@
+.btn{
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: rgb(244, 227, 34);
+    box-shadow: 0 0 5px 1px black;
+}
