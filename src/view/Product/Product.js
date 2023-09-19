@@ -9,7 +9,9 @@ import img2 from "./../../img/img2.webp";
 import img3 from "./../../img/img3.webp";
 import img4 from "./../../img/img4.jpg";
 
-export default function About(){
+export default function Product(){
+
+  
 
     return(
         <>

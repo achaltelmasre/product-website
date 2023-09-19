@@ -11,10 +11,10 @@ export default function Contact(){
         <Navbar/>
         <div className="cont">
         <h1> Contact Me</h1>
-            <p>Mail</p>
-            <p>Gitub</p>
-            <p>Linkdin</p>
-            <p>Call</p>
+            <p className="p">Mail</p>
+            <p className="p">Gitub</p>
+            <p className="p">Linkdin</p>
+            <p className="p">Call</p>
 
         </div>
 
