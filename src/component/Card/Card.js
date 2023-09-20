@@ -1,7 +1,8 @@
 import './Card.css';
 import Button  from "./../../component/Button/Button";
+import {AddButton} from "./../../component/Button/Button";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Card ({img,text,price}){
@@ -10,16 +11,15 @@ export default function Card ({img,text,price}){
 
     function increaseCount() {
       setCount(count + 1)
-        console.log(count);
-        document.getElementById("count").innerHTML = count;
-        
+    
     }
+   
+    useEffect(()=>{
+       console.log(`countnis ${count} now!`) 
+    } , [count])
 
     function decreaseCountCount() {
         setCount(count - 1)
-        console.log(count);
-        document.getElementById("count").innerHTML = count ;
-
         
     }
     return(
@@ -30,15 +30,16 @@ export default function Card ({img,text,price}){
             <p>{text}</p>
             <h3>Rs : {price}</h3>
 
-            <h1 id="count">{count}</h1>
+           
 
             <button onClick={increaseCount} className='bttn'> + </button>
-  
-            {"      "}
+
+            <span className='count'>{count}</span>
    
             <button onClick={decreaseCountCount} className='bttn'>- </button>
 
-            <Button />
+            <Button text={'Buy Nowr'}/>
+            {/* <AddButton txt={"achal"}/> */}
         </div>
         </>
 

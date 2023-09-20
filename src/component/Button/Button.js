@@ -1,18 +1,20 @@
 import "./Button.css";
 
-export default function Button(){
+const Button = ({text}) =>{
     return(
         <>
-        <button className="btn">Buy Now</button>
+        <button className="btn">{text}</button>
         </>
     )
 }
 
-export function  Add(text){
-    return(
-        <>
-        <button className="btns" >{}</button>
-        </>
-    )
-}
+export default Button;
+
+// export function  AddButton({txt}){
+//     return(
+//         <>
+//         <button className="btn" >{txt}</button>
+//         </>
+//     )
+// }
 
